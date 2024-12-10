@@ -24,8 +24,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding-block: 20px;
-  padding-inline: 30px;
+  padding-block: 30px;
+  padding-inline: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .navbar span {
@@ -33,15 +35,22 @@
   font-weight: bold;
 }
 
-.container .navbar a {
-  color: white;
-  text-decoration: none;
-  margin-inline: 15px;
-  font-weight: lighter;
+.container .navbar #menu {
+  display: flex;
+  gap: 40px;
 }
 
-.container .navbar a:hover {
-  color: #ccc;
+.container .navbar #menu li {
+  list-style-type: none;
+}
+
+.container .navbar #menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .navbar #menu li a:hover {
+  color: orangered;
 }
 
 .container .content {
@@ -74,4 +83,41 @@
 
 .container .content .view_gallery {
   background-color: #bde0fe;
+}
+
+/* Services section */
+#services {
+  padding-block: 30px;
+}
+
+#services h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+#services .services_container {
+  max-width: 90%;
+  margin: auto;
+}
+
+#services .services_container h1 {
+  text-align: center;
+}
+
+#services .services_container .services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #6c757d;
+}
+
+#services .services_container .card {
+  background-color: #caf0f8;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#services .services_container .card h2 {
+  margin-bottom: 20px;
 }
