@@ -5,7 +5,9 @@
   font-family: sans-serif;
 }
 
-.container {
+.header {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-image: linear-gradient(
       to top,
@@ -20,9 +22,7 @@
   align-content: center;
 }
 
-.container .navbar {
-  position: fixed;
-  top: 0;
+.header .navbar {
   width: 100%;
   padding-block: 30px;
   padding-inline: 40px;
@@ -30,45 +30,45 @@
   justify-content: space-between;
 }
 
-.container .navbar span {
+.header .navbar span {
   font-size: 25px;
   font-weight: bold;
 }
 
-.container .navbar #menu {
+.header .navbar #menu {
   display: flex;
   gap: 40px;
 }
 
-.container .navbar #menu li {
+.header .navbar #menu li {
   list-style-type: none;
 }
 
-.container .navbar #menu li a {
+.header .navbar #menu li a {
   text-decoration: none;
   color: white;
 }
 
-.container .navbar #menu li a:hover {
+.header .navbar #menu li a:hover {
   color: orangered;
 }
 
-.container .content {
+.header .content {
   max-width: 60%;
   margin: auto;
   text-align: center;
 }
 
-.container .content h1 {
+.header .content h1 {
   font-size: 60px;
   margin-block: 15px;
 }
 
-.container .content p {
+.header .content p {
   font-weight: lighter;
 }
 
-.container .content button {
+.header .content button {
   margin-block: 20px;
   padding-block: 15px;
   padding-inline: 30px;
@@ -77,11 +77,11 @@
   border-radius: 20px;
 }
 
-.container .content .buy {
+.header .content .buy {
   background-color: #ffc8dd;
 }
 
-.container .content .view_gallery {
+.header .content .view_gallery {
   background-color: #bde0fe;
 }
 
@@ -95,29 +95,29 @@
   font-size: 35px;
 }
 
-#services .services_container {
+#services .container {
   max-width: 90%;
   margin: auto;
 }
 
-#services .services_container h1 {
+#services .container h1 {
   text-align: center;
 }
 
-#services .services_container .services {
+#services .container .services {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   color: #6c757d;
 }
 
-#services .services_container .card {
+#services .container .card {
   background-color: #caf0f8;
   border-radius: 10px;
   padding: 30px 20px;
   text-align: center;
 }
 
-#services .services_container .card h2 {
+#services .container .card h2 {
   margin-bottom: 20px;
 }
