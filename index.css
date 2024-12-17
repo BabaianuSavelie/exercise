@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -166,8 +170,20 @@
   grid-row: span 2;
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    background-color: #6c757d;
+@media (max-width: 768px) {
+  .header .navbar #menu {
+    display: none;
+  }
+
+  .header .content {
+    max-width: 80%;
+  }
+
+  #services .container .services {
+    flex-direction: column;
+  }
+
+  #gallery .container .gallery_grid {
+    grid-template-columns: 1fr;
   }
 }
