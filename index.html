@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
+    <style>
+        textarea::placeholder {
+            color: blueviolet;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,6 +48,37 @@
             <button class="view_gallery">Vezi galeria</button>
         </div>
     </header>
+
+    <!-- About us section -->
+    <section id="about">
+        <div class="container py-20">
+            <div class="flex flex-col md:flex-row">
+                <!-- Imagine -->
+                <div class="order-2 md:order-1 md:w-2/4">
+                    <img src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="A team" class="md:w-2/4 m-auto rounded-xl">
+                </div>
+                <!-- Continut -->
+                <div class="order-1 md:order-2 md:w-2/4 md:px-20">
+                    <h1 class="text-3xl font-bold mb-5">About Us</h1>
+                    <p class="text-md font-thin mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in
+                        sequi
+                        aspernatur rerum
+                        commodi dolorem ducimus tempore accusantium illo nobis voluptatem tempora eos iusto
+                        necessitatibus ea quia, exercitationem natus quisquam!
+                    </p>
+
+                    <p class="text-md font-thin mb-10 md:mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda voluptatem id
+                        aperiam magni placeat molestiae saepe, quaerat ea, perferendis aliquid voluptates ab? Ducimus,
+                        ea alias explicabo tempora saepe placeat! Modi, beatae quisquam aliquid consectetur et sit in
+                        itaque quas?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="services">
         <div class="container">
@@ -133,29 +169,32 @@
 
     <!-- Contacts section -->
     <section id="contacts">
-        <div class="container mx-auto">
+        <div class="container mx-auto py-5">
             <h1 class="text-4xl text-center font-bold border-b-2 border-slate-400 my-4 pb-4">Contacte</h1>
 
-            <div class="flex bg-yellow-500">
-                <!--Contact form-->
-                <div class="bg-slate-700 w-2/4 flex justify-center items-center">
-                    <div>
-                        <h1>Contact Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="md:flex">
+                <!--Contact form container-->
+                <div class="bg-slate-700 flex justify-center items-center text-white py-10 md:py-0 md:w-2/4">
+                    <!-- Contact form-->
+                    <div class="w-3/4 md:w-2/4">
+                        <h1 class="text-center text-3xl uppercase mb-2">Contact Us</h1>
+                        <p class="text-center text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                        <form class="flex flex-col gap-2 w-2/4">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="email" name="email" placeholder="Email">
-                            <input type="number" name="phone" placeholder="Phone">
+                        <form class="flex flex-col gap-2 w-full text-black">
+                            <input type="text" name="name" placeholder="Name"
+                                class="py-3 px-4 rounded-3xl text-sm bg-slate-600">
+                            <input type="email" name="email" placeholder="Email"
+                                class="py-3 px-4 rounded-3xl text-sm bg-slate-600">
+                            <input type="number" name="phone" placeholder="Phone"
+                                class="py-3 px-4 rounded-3xl text-sm bg-slate-600 outline-0">
 
-                            <textarea id="message"></textarea>
-
-                            <button type="submit">Send</button>
+                            <button type="submit" class="bg-sky-500 py-3 rounded-3xl text-white">Send</button>
                         </form>
                     </div>
                 </div>
-                <!-- Map -->
-                <div class="grow w-2/4">
+
+                <!-- Map container -->
+                <div class="grow md:w-2/4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.467034643618!2d28.1956789!3d45.901971499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65ddfd9f0e961%3A0x3ad3fb9966fa8dd9!2sIuliaBoutique!5e0!3m2!1sro!2s!4v1734625958529!5m2!1sro!2s"
                         height="450" style="border:0;" allowfullscreen="" loading="lazy"
