@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                     <a href="#gallery">Galerie</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contacts">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -130,10 +131,44 @@
         </div>
     </section>
 
-    
+    <!-- Contacts section -->
+    <section id="contacts">
+        <div class="container mx-auto">
+            <h1 class="text-4xl text-center font-bold border-b-2 border-slate-400 my-4 pb-4">Contacte</h1>
+
+            <div class="flex bg-yellow-500">
+                <!--Contact form-->
+                <div class="bg-slate-700 w-2/4 flex justify-center items-center">
+                    <div>
+                        <h1>Contact Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <form class="flex flex-col gap-2 w-2/4">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="number" name="phone" placeholder="Phone">
+
+                            <textarea id="message"></textarea>
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="grow w-2/4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.467034643618!2d28.1956789!3d45.901971499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65ddfd9f0e961%3A0x3ad3fb9966fa8dd9!2sIuliaBoutique!5e0!3m2!1sro!2s!4v1734625958529!5m2!1sro!2s"
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-slate-700 text-white text-center py-10">
         <p>Babaianu Savelie 2024 &copy; All rights reserved</p>
     </footer>
 </body>
